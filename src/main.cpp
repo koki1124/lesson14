@@ -2,6 +2,8 @@
 #define _CRTDBG_MAP_ALLOC
 #include <stdlib.h>
 #include <crtdbg.h>
+
+
 // メモリリークチェックコード
 
 #include <windows.h>
@@ -15,6 +17,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	// メモリリークチェックコード
 
 	ゲームエンジン *エンジン= new ゲームエンジン();
+
 
 	if (!エンジン) return -1;// メモリ確保に失敗
 
